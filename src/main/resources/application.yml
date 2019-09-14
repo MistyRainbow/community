@@ -1,0 +1,57 @@
+server:
+  port: 8885
+#  servlet:
+#    context-path: /MistyR
+
+person:
+    name: otto
+    age: 23
+    addr: anshan
+
+
+#DB Configuration:
+spring:
+#datasource
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/test?serverTimezone=UTC
+    username: root
+    password: 142294
+#thymeleaf
+#  thymeleaf:
+#    mode: HTML5
+#    encoding: utf-8
+#    cache: false
+#    servlet:
+#      content-type: text/html
+#JPA Configuration:
+  jpa:
+      database: MySQL
+      show-sql: true
+      generate-ddl: true
+      hibernate:
+        ddl-auto: update
+        naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
+#Redis:
+  redis:
+      host: 127.0.0.1
+      port: 6379
+
+
+#spring集成Mybatis环境
+#pojo别名扫描包
+mybatis:
+  type-aliases-package: com.wjf.domain
+#加载Mybatis映射文件
+  mapper-locations: classpath:mapper/*Mapper.xml
+
+
+
+
+
+
+
+
+
+
+
