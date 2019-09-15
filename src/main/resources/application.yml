@@ -14,7 +14,7 @@ spring:
 #datasource
   datasource:
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/test?serverTimezone=UTC
+    url: jdbc:mysql://127.0.0.1:3306/mistyrainbow?serverTimezone=UTC
     username: root
     password: 142294
 #thymeleaf
@@ -41,7 +41,7 @@ spring:
 #spring集成Mybatis环境
 #pojo别名扫描包
 mybatis:
-  type-aliases-package: com.wjf.domain
+  type-aliases-package: wjf.mistyr.com.domain
 #加载Mybatis映射文件
   mapper-locations: classpath:mapper/*Mapper.xml
 
